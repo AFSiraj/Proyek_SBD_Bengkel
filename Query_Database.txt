@@ -50,10 +50,3 @@ INSERT INTO login (username,password) VALUES
 \COPY stock FROM 'C:\users\ikhsan f\desktop\stock.csv' DELIMITER ',' CSV HEADER;
 
 CREATE VIEW complete_spareparts AS SELECT sp.id_tipe, sp.jenis, sp.merk, sp.tipe, sp.harga, sp.tanggal_input, st.stock FROM spareparts sp FULL JOIN stock st ON sp.id_tipe = st.id_tipe;
-
-fix
-typo on search_list (harga >< tanggal input kebalik)
-search motor salah nama referensi page (search_brand.php -> search_motor.php)
-
-INSERT INTO test (id_tipe, id_motor)
-SELECT id_tipe FROM 
